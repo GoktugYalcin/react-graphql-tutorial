@@ -18,11 +18,11 @@ body {
   transition: all 1s ease-in-out;
 }
 
-.mission:nth-child(odd) {
+.slideLeft {
   animation: 1s ease-in-out 0s 1 slideInFromLeft;
 }
 
-.mission:nth-child(even) {
+.slideRight {
   animation: 1s ease-in-out 0s 1 slideInFromRight;
 }
 
