@@ -6,14 +6,43 @@ body {
   align-items: center;
 }
 
+#container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchContainer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchContainer > input {
+  padding: 50px;
+  width: 50vw;
+  font-size: 30px;
+  border: none;
+}
+
+.searchContainer > input::placeholder {
+  font-size: 30px;
+}
+
 .mission {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  padding-right: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 25px;
   background: #8493b4;
+  width: 400px;
+  height: 400px;
   margin-bottom: 10px;
+  margin-right: 10px;
   border-radius: 25px;
   transition: all 1s ease-in-out;
 }
@@ -48,6 +77,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+}
+
+.image > img {
+  border: 2px solid #000000;
+  border-radius: 20px;
 }
 
 @keyframes slideInFromLeft {
