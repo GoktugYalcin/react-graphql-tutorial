@@ -1,6 +1,6 @@
 # React GraphQL Tutorial
 
-This application created for learning and applying GraphQL on React. I used SpaceX public API for this app.
+This application created for learning and applying GraphQL on React. I used SpaceX public API, React Context and GraphQL for this app.
 
 For start,
 
