@@ -42,7 +42,7 @@ const MissionList = () => {
     return (
         <div id="container">
             {data.launchesPast.map((launch, index) => (
-                launch.mission_name.toLowerCase().includes(search.toLowerCase()) && <MissionCard key={index} launch={launch} />
+                launch?.mission_name?.toLowerCase().includes(search.toLowerCase()) && <MissionCard key={index} launch={launch} />
             ))}
         </div>
     );
