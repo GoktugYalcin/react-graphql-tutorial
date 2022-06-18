@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import MissionCard from "./MissionCard";
 import { useQuery, gql } from "@apollo/client";
 import { SearchContext } from './context/SearchContext';
+import {JellyTriangle} from "@uiball/loaders";
 
 const FILMS_QUERY = gql`
  {
@@ -36,8 +37,16 @@ const MissionList = () => {
 
     const { search } = useContext(SearchContext)
 
-    if(loading) return <div className="loading">Fetching Data...</div>
-    if(error) return <div className="error">{error.message}</div>
+    if(loading) return <div id="container">
+        <div className="loader">
+            <JellyTriangle
+                size={60}
+                speed={1.75}
+                color="#fbe9e5"
+            />
+        </div>
+    </div>
+    if(error) return <div id="container">{error.message}</div>
 
     return (
         <div id="container">
