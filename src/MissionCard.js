@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 const MissionCard = ({launch}) => {
     return <>
-        <Fade duration={200}>
+        <Fade duration={400}>
             <div className="mission" key={launch.id}>
                 <div className="mission_name" key={launch.id}>
                     <a href={launch.links.video_link} target="_blank" rel="noreferrer"><b>Mission Name:</b> {launch.mission_name}</a>
